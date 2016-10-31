@@ -107,18 +107,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int common_google_signin_btn_text_light_pressed=0x7f020014;
     }
     public static final class id {
-        public static int adjust_height=0x7f060000;
-        public static int adjust_width=0x7f060001;
-        public static int auto=0x7f060006;
-        public static int dark=0x7f060007;
-        public static int icon_only=0x7f060003;
-        public static int light=0x7f060008;
-        public static int none=0x7f060002;
-        public static int standard=0x7f060004;
-        public static int wide=0x7f060005;
+        public static int adjust_height=0x7f050001;
+        public static int adjust_width=0x7f050002;
+        public static int auto=0x7f050007;
+        public static int crash_reporting_present=0x7f050000;
+        public static int dark=0x7f050008;
+        public static int icon_only=0x7f050004;
+        public static int light=0x7f050009;
+        public static int none=0x7f050003;
+        public static int standard=0x7f050005;
+        public static int wide=0x7f050006;
     }
     public static final class integer {
-        public static int google_play_services_version=0x7f050000;
+        public static int google_play_services_version=0x7f060000;
     }
     public static final class string {
         public static int common_google_play_services_enable_button=0x7f030000;
