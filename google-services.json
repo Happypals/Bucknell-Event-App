@@ -1,20 +1,32 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "901727258701",
     "firebase_url": "https://eventapp-46979.firebaseio.com",
     "project_id": "eventapp-46979",
     "storage_bucket": "eventapp-46979.appspot.com"
+=======
+    "project_number": "393322423020",
+    "firebase_url": "https://eventapp-d6434.firebaseio.com",
+    "project_id": "eventapp-d6434",
+    "storage_bucket": "eventapp-d6434.appspot.com"
+>>>>>>> 192cec7b8081ef033609e651651770b7392f1b9f
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:901727258701:android:d8b138d8203324d9",
+=======
+        "mobilesdk_app_id": "1:393322423020:android:d8b138d8203324d9",
+>>>>>>> 192cec7b8081ef033609e651651770b7392f1b9f
         "android_client_info": {
           "package_name": "com.phonegap.eventApp"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "901727258701-v65mc1sghnuoqtb2r3r4r04hb4rmi5n6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -24,12 +36,19 @@
         },
         {
           "client_id": "901727258701-4lvctghlmqqhg5mqaed0v9ae9q2rtct6.apps.googleusercontent.com",
+=======
+          "client_id": "393322423020-u2o0th69jajpilpk1v4b6ikd66jfnrtj.apps.googleusercontent.com",
+>>>>>>> 192cec7b8081ef033609e651651770b7392f1b9f
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyB1WA_pkbgz757iZ47wbzfBIkYpoPP1RnA"
+=======
+          "current_key": "AIzaSyCvy1f23mJwIcFh2sw7Z7U1vMPEn-QEVk0"
+>>>>>>> 192cec7b8081ef033609e651651770b7392f1b9f
         }
       ],
       "services": {
@@ -37,6 +56,7 @@
           "status": 1
         },
         "appinvite_service": {
+<<<<<<< HEAD
           "status": 2,
           "other_platform_oauth_client": [
             {
@@ -44,6 +64,10 @@
               "client_type": 3
             }
           ]
+=======
+          "status": 1,
+          "other_platform_oauth_client": []
+>>>>>>> 192cec7b8081ef033609e651651770b7392f1b9f
         },
         "ads_service": {
           "status": 2

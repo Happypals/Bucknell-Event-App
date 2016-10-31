@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "393322423020",
+    "firebase_url": "https://eventapp-d6434.firebaseio.com",
+    "project_id": "eventapp-d6434",
+    "storage_bucket": "eventapp-d6434.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393322423020:android:d8b138d8203324d9",
+        "android_client_info": {
+          "package_name": "com.phonegap.eventApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393322423020-u2o0th69jajpilpk1v4b6ikd66jfnrtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvy1f23mJwIcFh2sw7Z7U1vMPEn-QEVk0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
