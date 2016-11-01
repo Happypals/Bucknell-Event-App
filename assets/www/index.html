@@ -49,27 +49,27 @@
             <a href="webchat.html"> go to webchat->></a>
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
+
         </div>
+        <p id="demo"></p>
+        <script>document.getElementById("demo").innerHTML = window.requestReadPermission();</script>
+
+
+
+
+        <button onclick="createCalendarEvent()">create Calendar Event</button><br/><br/>
+        <button onclick="openCalendar()">open calendar</button><br/><br/>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
-
-    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCB74ljfD8KEfORUMMD7kv3h4f67tTKKuo",
-        authDomain: "my-event-app-60679.firebaseapp.com",
-        databaseURL: "https://my-event-app-60679.firebaseio.com",
-        storageBucket: "my-event-app-60679.appspot.com",
-        messagingSenderId: "711710351084"
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script type="text/javascript" src="js/demo.js"></script>
     <script type="text/javascript" src="js/Calendar.js"></script>
+
+
+
 </body>
 
 </html>

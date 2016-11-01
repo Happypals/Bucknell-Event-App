@@ -16,6 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ var mainText = document.getElementById("mainText");
+ var submitBtn = document.getElementById("submitBtn");
+ var fireHeading = document.getElementById("fireHeading");
+
+ function submitClick() {
+   var firebaseRef = firebase.database().ref();
+   var messageText = mainText.value;
+   firebaseRef.child("XizhouLi").set(messageText);
+ }
+
 var app = {
     // Application Constructor
     initialize: function() {
