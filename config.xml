@@ -3,6 +3,8 @@
   <description>Hello World sample application that responds to the deviceready event.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
+  <allow-navigation href="*.auth0.com" />
+  <access origin="*.auth0.com" />
   <!-- for Android -->
   <feature name="Calendar">
     <param name="android-package" value="nl.xservices.plugins.Calendar" />
@@ -11,6 +13,7 @@
   <preference name="android-minSdkVersion" value="14"/>
   <preference name="android-build-tool" value="gradle" />
   <plugin name="cordova-plugin-firebase" spec="0.1.16" />
+  <plugin name="cordova-plugin-inappbrowser" />
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
   <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
   <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0"/>

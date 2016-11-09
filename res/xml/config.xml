@@ -70,11 +70,11 @@
         <param name="android-package" value="nl.xservices.plugins.Calendar" />
     </feature>
     <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
-    <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
-    <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
-    <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
-    <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
-    <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
+    <icon density="mdpi" src="www/res/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="www/res/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="www/res/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="www/res/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="www/res/mipmap-xxxhdpi/ic_launcher.png" />
     <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
     <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
     <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />

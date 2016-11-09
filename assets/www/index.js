@@ -8,7 +8,6 @@ var fireHeading = document.getElementById("fireHeading");
 //   firebaseHeadingRef.on('value', function(datasnapshot){
 //   fireHeading.innerText = datasnapshot.val();
 // });
-// Add a new comment to see if merge works
 
 function submitClick() {
 
