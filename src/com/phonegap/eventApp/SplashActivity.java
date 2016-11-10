@@ -29,7 +29,7 @@ public class SplashActivity extends CordovaActivity {
             @Override
             public void run() {
                 SplashActivity.this.finish();
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
             }
         },Delay);
         scheduled = true;

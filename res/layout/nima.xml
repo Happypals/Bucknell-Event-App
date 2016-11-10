@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bison">
+    android:background="@drawable/bison"
+    android:weightSum="1">
 
+    <TextView
+        android:text="Bucknell Event"
+        android:textSize="25dp"
+        android:textColor="#948794"
+        android:textColorHighlight="#948794"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Title"
+        android:textAlignment="center"
+        android:layout_marginTop="514dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:id="@+id/textView"
+        android:layout_weight="0.09"
+        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,SpUsage" />
 </LinearLayout>
