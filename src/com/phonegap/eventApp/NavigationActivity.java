@@ -1,5 +1,6 @@
 package com.phonegap.eventApp;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -16,18 +17,30 @@ import android.widget.TextView;
  */
 
 public class NavigationActivity extends FragmentActivity {
-    ViewPager mViewPager;
-    PagerAdapter mPagerAdapter;
+    private static final int NUM_PAGES = 3;
+    private ViewPager mViewPager;
+    private PagerAdapter mPagerAdapter;
 
+    @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.navigation);
+        setContentView(R.layout.screen_slide);
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
-        mViewPager = (ViewPager) findViewById(R.id.navigation);
+        mViewPager = (ViewPager) findViewById(R.id.navi);
         mViewPager.setAdapter(mPagerAdapter);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        if (mViewPager.getCurrentItem() == 0) {
+            // If the user is currently looking at the first step, allow the system to handle the
+            // Back button. This calls finish() on this activity and pops the back stack.
+            super.onBackPressed();
+        } else {
+            // Otherwise, select the previous step.
+            mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1);
+        }
+    }
 }
 class PagerAdapter extends FragmentPagerAdapter {
 
@@ -37,12 +50,8 @@ class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = new ObjectFragment();
-        Bundle args = new Bundle();
-        // Our object is just an integer :-P
-        args.putInt(ObjectFragment.ARG_OBJECT, position+1);
-        fragment.setArguments(args);
-        return fragment;
+
+        return new ScreenSlidePageFragment();
     }
 
     @Override
@@ -52,19 +61,18 @@ class PagerAdapter extends FragmentPagerAdapter {
 
     // Instances of this class are fragments representing a single
     // object in our collection.
-    public static class ObjectFragment extends Fragment {
-        public static final String ARG_OBJECT = "object";
+    public static class ScreenSlidePageFragment extends Fragment {
+
 
         @Override
         public View onCreateView(LayoutInflater inflater,
                                  ViewGroup container, Bundle savedInstanceState) {
             // The last two arguments ensure LayoutParams are inflated
             // properly.
-            View rootView = inflater.inflate(
-                    R.layout.navigation, container, false);
+            ViewGroup rootView = (ViewGroup)inflater.inflate(
+                    R.layout.screen_slide, container, false);
             Bundle args = getArguments();
-            ((TextView) rootView.findViewById(android.R.id.text1)).setText(
-                    Integer.toString(args.getInt(ARG_OBJECT)));
+
             return rootView;
         }
     }
